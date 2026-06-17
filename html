@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TOOLong - Educational Material Rentals</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="TOOLong-logo.png" alt="TOOLong Logo">
+    <h1>TOOLong</h1>
+    <p><em>Tools for Better Learning.</em></p>
+  </header>
+
+  <!-- Mission & Vision at the top -->
+  <section id="vision">
+    <h2>Our Mission & Vision</h2>
+    <p><strong>Vision:</strong> To become a trusted and accessible community equipment rental platform.</p>
+    <p><strong>Mission:</strong> Connect tool owners and renters through a safe, convenient, and reliable digital platform.</p>
+  </section>
+
+  <nav>
+    <a href="#catalog">Catalog</a>
+    <a href="#contact">Contact</a>
+    <a href="#members">Members</a>
+  </nav>
+
+  <section id="catalog">
+    <h2>Rental Catalog</h2>
+    <div class="catalog">
+      <div class="item">
+        <h3>Laptop</h3>
+        <p>₱300/day</p>
+        <span class="status available">Available</span>
+        <button onclick="showDetails('Laptop', '₱300/day', 'Ideal for assignments, research, and presentations.', true)">Rent Now</button>
+      </div>
+      <div class="item">
+        <h3>Printer</h3>
+        <p>₱100/day</p>
+        <span class="status unavailable">Not Available</span>
+        <button onclick="showDetails('Printer', '₱100/day', 'Efficient for printing reports and schoolwork.', false)">Rent Now</button>
+      </div>
+      <div class="item">
+        <h3>Sound System</h3>
+        <p>₱250/day</p>
+        <span class="status available">Available</span>
+        <button onclick="showDetails('Sound System', '₱250/day', 'Perfect for events and presentations.', true)">Rent Now</button>
+      </div>
+      <div class="item">
+        <h3>T-Square</h3>
+        <p>₱50/day</p>
+        <span class="status available">Available</span>
+        <button onclick="showDetails('T-Square', '₱50/day', 'Essential drafting tool for students.', true)">Rent Now</button>
+      </div>
+      <div class="item">
+        <h3>Volt Tester</h3>
+        <p>₱80/day</p>
+        <span class="status unavailable">Not Available</span>
+        <button onclick="showDetails('Volt Tester', '₱80/day', 'Useful for electronics and circuit testing.', false)">Rent Now</button>
+      </div>
+    </div>
+    <div id="cart">
+      <h3>Your Rental Cart</h3>
+      <ul id="cartItems"></ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: toolongrentals@gmail.com</p>
+    <p>Address: Diliman, Quezon City, Philippines</p>
+  </section>
+
+  <!-- Members at the bottom -->
+  <section id="members">
+    <h2>Group 7 Members</h2>
+    <ul>
+      <li>Roculas, Lester Tite</li>
+      <li>Rosal, Joey Marie</li>
+      <li>Salvador, Mark Jason</li>
+      <li>Sampayan, Gian Andrie</li>
+      <li>San Diego, Gian Nicole</li>
+      <li>Santos, Ralph Lauren</li>
+      <li>Umali, Venice Glenn</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 TOOLong | Educational Material Rentals</p>
+  </footer>
+
+  <!-- Modal -->
+  <div id="itemModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <p><strong>Price:</strong> <span id="modalPrice"></span></p>
+      <p id="modalDesc"></p>
+      <button id="modalButton"></button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
