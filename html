@@ -27,6 +27,16 @@
 
   <section id="catalog">
     <h2>Rental Catalog</h2>
+
+    <!-- Role Selector -->
+    <div id="roleSelector">
+      <p>Select your role:</p>
+      <button onclick="selectRole('Student')">Student</button>
+      <button onclick="selectRole('Teacher')">Teacher</button>
+      <button onclick="selectRole('Third Party Supplier')">Third Party Supplier</button>
+      <p id="roleDisplay">Current Role: Student</p>
+    </div>
+
     <div class="catalog">
       <div class="item">
         <h3>Laptop</h3>
@@ -59,6 +69,7 @@
         <button onclick="showDetails('Volt Tester', '₱80/day', 'Useful for electronics and circuit testing.', false)">Rent Now</button>
       </div>
     </div>
+
     <div id="cart">
       <h3>Your Rental Cart</h3>
       <ul id="cartItems"></ul>
