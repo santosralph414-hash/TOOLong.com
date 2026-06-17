@@ -1,3 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9fbff;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+header img {
+  width: 120px;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+nav {
+  background-color: #0055a5;
+  padding: 10px;
+  text-align: center;
+}
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+section {
+  padding: 20px;
+}
+h2 {
+  color: #003366;
+}
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  flex: 1 1 200px;
+  text-align: center;
+  background: #fff;
+}
+.status {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+}
+.available {
+  color: green;
+}
+.unavailable {
+  color: red;
+}
+#cart {
+  background: #eef5ff;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+#roleSelector {
+  margin-bottom: 20px;
+  padding: 10px;
+  background: #eef5ff;
+  border-radius: 5px;
+}
+#roleSelector button {
+  margin: 5px;
+  padding: 8px 12px;
+  background-color: #0055a5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#roleSelector button:hover {
+  background-color: #003366;
+}
+#roleDisplay {
+  margin-top: 10px;
+  font-weight: bold;
+}
 #members {
   background: #f0f8ff;
   padding: 20px;
@@ -11,4 +100,29 @@
 #members li {
   margin: 5px 0;
   font-weight: bold;
+}
+/* Modal styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+.close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
 }
